@@ -31,8 +31,9 @@ stages:
     environment: Dev
     strategy:
       runOnce:
-        deploy:steps:
-        - script: echo eploy to Dev
+        deploy:
+          steps:
+          - script: echo eploy to Dev
 - stage: QaDeploy
   jobs:
   - job: BuildJob
@@ -42,5 +43,6 @@ stages:
     environment: Qa
     strategy:
       runOnce:
-        deploy:steps:
-        - script: echo eploy to Qa
+        deploy:
+          steps:
+          - script: echo eploy to Qa
