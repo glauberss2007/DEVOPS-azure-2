@@ -21,9 +21,9 @@ stages:
     - bash: echo $(Build.SourceBranchName)
     - bash: ls -R $(System.DefaultWorkingDirectory)
     - bash: echo $(Build.ArtifactStaging)
-  - job: SecondJob
-    steps:
-    - bash: echo Build SecondJob
+  #- job: SecondJob
+#    steps:
+#    - bash: echo Build SecondJob
 # - stage: DevDeploy
 #   variables:
 #     environment: Dev
