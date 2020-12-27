@@ -23,7 +23,8 @@ stages:
     - task: Docker@2
       displayName: Build an image
       inputs:
-        repository: 'glaubersantos/currency-exchange-devops'
+        containerRegistry: 'azureDevOps'
+        repository: 'glaubersantos/curerncy-exchange-devops'
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
         tags: '$(tag)'
